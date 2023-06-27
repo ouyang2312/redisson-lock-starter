@@ -1,0 +1,46 @@
+{
+  "properties": [
+    {
+      "name": "oylock.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否开启分布式锁 true开启，false关闭。",
+      "sourceType": "com.oy.redissonlockstarter.config.LockConfig"
+    },
+    {
+      "name": "oylock.address",
+      "type": "java.lang.String",
+      "description": "redis地址 比如 redis://127.0.0.1:6379",
+      "sourceType": "com.oy.redissonlockstarter.config.LockConfig"
+    },
+    {
+      "name": "oylock.password",
+      "type": "java.lang.String",
+      "description": "redis密码",
+      "sourceType": "com.oy.redissonlockstarter.config.LockConfig"
+    },
+    {
+      "name": "oylock.database",
+      "type": "java.lang.Integer",
+      "description": "redis库",
+      "sourceType": "com.oy.redissonlockstarter.config.LockConfig"
+    },
+    {
+      "name": "oylock.waitTime",
+      "type": "java.lang.Long",
+      "description": "锁等待时间",
+      "sourceType": "com.oy.redissonlockstarter.config.LockConfig"
+    },
+    {
+      "name": "oylock.leaseTime",
+      "type": "java.lang.Long",
+      "description": "锁持有时间",
+      "sourceType": "com.oy.redissonlockstarter.config.LockConfig"
+    },
+    {
+      "name": "oylock.cluster-server.node-addresses",
+      "type": "java.lang.String",
+      "description": "集群地址 redis://127.0.0.1:6379,redis://127.0.0.1:6379",
+      "sourceType": "com.oy.redissonlockstarter.config.LockConfig.clusterServer"
+    }
+  ]
+}

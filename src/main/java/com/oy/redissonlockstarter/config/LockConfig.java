@@ -11,7 +11,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = LockConfig.PREFIX)
 public class LockConfig {
 
-    public static final String PREFIX = "spring.oylock";
+    public static final String PREFIX = "oylock";
 
     //redisson
     private String address;

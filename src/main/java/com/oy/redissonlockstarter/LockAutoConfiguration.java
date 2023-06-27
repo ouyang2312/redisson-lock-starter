@@ -35,7 +35,7 @@ public class LockAutoConfiguration {
 
     @Bean(destroyMethod = "shutdown")
     @ConditionalOnMissingBean
-    public RedissonClient redisson() throws Exception {
+    public RedissonClient redisson() {
         Config config = new Config();
         // 如果有集群
         if (lockConfig.getClusterServer() != null) {
